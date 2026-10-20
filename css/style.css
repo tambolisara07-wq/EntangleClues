@@ -1,0 +1,221 @@
+:root{--bg:#fbfaf5;--s1:#e6ece1;--tx:#17211a;--mu:#5d625c;--ln:rgba(23,33,26,.18);--y:#f8d856;--ink:#17211a;--navy:#0c2240}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 17px/1.65 'DM Sans',system-ui,sans-serif}
+img{max-width:100%;display:block}h1,h2,h3{font-family:Fredoka,'DM Sans',sans-serif;font-weight:600;line-height:1.12;margin:0}
+p{margin:0 0 1rem;color:var(--mu)}a{color:inherit}
+h1{font-size:clamp(2.3rem,5vw,4.2rem);letter-spacing:-.015em}h2{font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:1rem}h3{font-size:1.3rem;margin-bottom:.5rem}
+.w{max-width:1160px;margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid #3b6fe0;outline-offset:3px}
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(251,250,245,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+.nb{display:flex;align-items:center;justify-content:space-between;height:88px;gap:24px}
+.nb ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}.nb .l{justify-content:flex-end}
+.nb a{text-decoration:none}.lg img{height:62px;width:auto}
+.nb ul a{display:block;padding:8px 14px;color:var(--mu);font-weight:500;font-size:.98rem;white-space:nowrap}
+.nb ul a:hover{color:var(--tx)}.nb a[aria-current=page]{color:var(--ink);box-shadow:inset 0 -3px 0 var(--y)}
+#mb,#mm{display:none}
+/* shared */
+.btn{display:inline-flex;align-items:center;min-height:50px;padding:0 26px;border-radius:8px;background:var(--y);color:var(--ink);font:700 .98rem 'DM Sans',system-ui,sans-serif;text-decoration:none;border:1px solid var(--y)}
+.btn:hover{filter:brightness(1.08)}.btn.g{background:none;color:var(--tx);border-color:rgba(23,33,26,.4)}.btn.g:hover{background:rgba(23,33,26,.06);filter:none}.nv{background:var(--navy);color:#fff}.nv p{color:#b9c6da}.nv .btn.g{color:#fff;border-color:rgba(255,255,255,.5)}.nv .btn.g:hover{background:rgba(255,255,255,.1)}
+.bt{display:flex;gap:14px;flex-wrap:wrap;margin-top:2rem}
+.pg{animation:in .3s ease-out}@keyframes in{from{opacity:0}to{opacity:1}}
+.ph{padding:72px 0 48px}.ph p{max-width:40rem;font-size:1.1rem;margin:1.2rem 0 0}
+.sec{padding:72px 0}.alt{background:var(--s1)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.bd{cursor:zoom-in}.bd img{width:100%;max-width:520px;margin:auto;border-radius:50%;filter:drop-shadow(0 24px 36px rgba(12,34,64,.35))}
+.pn.nv{background:var(--navy);padding:48px}.bd.pk img{border-radius:10px;max-width:100%;filter:none}.big{display:block;font:600 2.6rem/1 Fredoka;margin-bottom:.6rem}
+.ex{list-style:none;margin:0 0 1.5rem;padding:0}.ex li{padding:14px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.ex li:first-child{border-top:1px solid var(--ln)}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.mc{border-radius:10px;padding:22px;color:var(--ink)}.mc small{display:block;font-size:.9rem;color:#3b4658;margin-bottom:.5rem}.mc b{font:600 1.3rem/1.2 Fredoka}
+.sp.v{grid-template-columns:1fr;gap:0}.sp.v>div{padding:18px 0}.pn{background:var(--s1);border-radius:10px;padding:32px}.alt .pn{background:#fff}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+/* home */
+.hero{padding:64px 0 88px}.hero .two{gap:56px}.hero p{font-size:1.12rem;max-width:33rem;margin-top:1.5rem}
+.vid{position:relative;aspect-ratio:16/9;background:#040d1c;border-radius:10px;overflow:hidden}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}.vid video:not([src]){display:none}
+.vs{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:16px;color:#b9c6da;font-size:.95rem}
+.vs b{width:76px;height:76px;border-radius:50%;background:var(--y);display:grid;place-items:center}.vs svg{margin-left:4px}video[src]~.vs{display:none}
+.cta{background:var(--y);color:var(--ink);padding:56px 0}.cta .w{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}.cta h2{margin:0;max-width:32rem}.cta .btn{background:var(--ink);color:#fff;border-color:var(--ink)}
+/* game */
+.pr{max-width:34rem}.pr strong{color:var(--tx);font-weight:700}
+.sp{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}.sp>div{border-top:1px solid var(--ln);padding-top:20px}.sp p{font-size:.95rem;margin:0}
+.st{display:grid;grid-template-columns:repeat(3,1fr);padding:36px 0}.pn.st{background:var(--navy);color:#fff}.st span{color:#b9c6da!important}.st>div{padding:0 32px;border-left:1px solid rgba(255,255,255,.2)}.st>div:first-child{border:0;padding-left:32px}
+.st b{display:block;font:600 3.2rem/1 Fredoka;color:var(--y);margin-bottom:.6rem}.st span{color:var(--mu);font-size:.95rem}
+/* emotions */
+.ec{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.e{border-radius:10px;overflow:hidden}
+.e .im{aspect-ratio:1;display:grid;place-items:center}.e .im img{width:100%;height:100%;object-fit:cover}
+.e .tx{padding:20px}.e h3{color:var(--ink);font-size:1.5rem;margin-bottom:.4rem}.e p{color:#3b4658;font-size:.92rem;margin:0;line-height:1.5}
+/* how */
+.stp{display:grid;grid-template-columns:1fr 1fr;gap:20px}.stp .pn{padding:36px;background:#fff;border:1px solid var(--ln)}.stp b{width:54px;height:54px;border-radius:50%;background:var(--y);display:grid;place-items:center;font:600 1.4rem Fredoka;color:var(--ink);margin-bottom:1.4rem}.stp p,.g3 p{margin:0}
+.jn i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:10px;background:var(--c)}.jn small{font-size:.95rem;color:var(--mu);display:block;margin-bottom:1rem}.jn h3{margin-bottom:.7rem}
+/* components */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:40px 20px}.gal figure{margin:0}.gal .a{grid-column:span 4}.gal .b{grid-column:span 2}.gal .f{grid-column:span 6}.gal .h{grid-column:span 3}
+.gt{background:var(--s1);border-radius:10px;display:grid;place-items:center;padding:20px;height:clamp(220px,31vw,380px)}.gt.auto{height:auto}
+.gt img{max-width:100%;max-height:100%;cursor:zoom-in}.gt.auto img{width:100%}.gt.rd img{border-radius:50%}
+.gal figcaption{padding-top:16px}.gal h3{font-size:1.2rem;margin-bottom:.3rem}.gal p{font-size:.95rem;margin:0}
+.box ul{list-style:none;margin:0;padding:0;width:100%}.box li{padding:16px 0;border-bottom:1px solid var(--ln);color:var(--mu);font-size:.95rem}.box li:last-child{border:0}.box li b{display:block;color:var(--tx);font-weight:500;font-size:1.05rem}
+/* rules */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px}.tabs button{font:500 .95rem 'DM Sans',system-ui,sans-serif;padding:10px 20px;border-radius:8px;background:none;color:var(--mu);border:1px solid var(--ln);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--y);border-color:var(--y);color:var(--ink)}
+.tp{max-width:820px}details{border-bottom:1px solid var(--ln)}details:first-child{border-top:1px solid var(--ln)}
+summary{display:flex;justify-content:space-between;gap:24px;padding:22px 0;font-weight:500;font-size:1.12rem;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--navy);font-size:1.5rem;line-height:1}details[open] summary:after{content:"\2212"}details p{padding-bottom:22px;margin:0}
+.qr{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:none}.qr>div{background:#fff;border:1px solid var(--ln);border-radius:10px;padding:20px 24px}.qr dt{font-weight:700;margin-bottom:.2rem}.qr dd{margin:0;color:var(--mu);font-size:.95rem;line-height:1.5}
+footer{background:var(--s1);margin-top:0;padding:56px 0 32px}.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}.fg img{height:64px;width:auto;margin-bottom:14px}.fg p{max-width:22rem}.fg a{display:block;padding:5px 0;color:var(--tx);text-decoration:none}.fg a:hover{text-decoration:underline}
+.cp{border-top:1px solid var(--ln);margin-top:40px;padding-top:20px;color:var(--mu);font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+dialog{border:0;background:rgba(3,8,18,.94);width:100vw;max-width:none;height:100%;max-height:none;padding:20px;color:#fff}dialog[open]{display:grid;place-items:center}dialog img{max-height:90vh;max-width:96vw;object-fit:contain;border-radius:8px}dialog button{position:fixed;top:16px;right:16px;width:46px;height:46px;border-radius:50%;border:0;font-size:1.3rem;cursor:pointer}
+@media(max-width:1000px){.g5{grid-template-columns:repeat(3,1fr)}.ec{grid-template-columns:repeat(3,1fr)}.sp{grid-template-columns:1fr 1fr}.two{gap:48px}}
+@media(max-width:860px){
+.nb{height:76px}.nb ul{display:none}.lg img{height:54px}
+#mb{display:grid;place-items:center;width:48px;height:48px;background:none;border:1px solid var(--ln);border-radius:8px;color:var(--tx);cursor:pointer}
+#mm{position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--ln);padding:8px 28px 20px}#mm.o{display:block}#mm a{display:block;padding:14px 0;text-decoration:none;color:var(--tx);font-weight:500;border-bottom:1px solid var(--ln)}#mm a[aria-current=page]{background:rgba(248,216,86,.4)}
+.two{grid-template-columns:1fr}.g3,.stp,.qr{grid-template-columns:1fr}.hero{padding:40px 0 64px}.sec{padding:56px 0}.ph{padding:48px 0 32px}
+.gal .a,.gal .b,.gal .h{grid-column:span 6}.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:span 2}.st{grid-template-columns:1fr;gap:28px}.st>div{border:0;padding:0 28px}}
+@media(max-width:560px){.g5{grid-template-columns:1fr 1fr}.ec{grid-template-columns:1fr 1fr;gap:12px}.e .tx{padding:14px}.e h3{font-size:1.25rem}.sp{grid-template-columns:1fr}.btn{width:100%;justify-content:center}.w{padding:0 20px}}
+@media(prefers-reduced-motion:reduce){.pg{animation:none}*{transition:none!important}}
+
+/* ---- centered dark header + image hero ---- */
+header{position:relative;background:#011623;border-bottom:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+header :focus-visible{outline-color:#fff}
+.nb{flex-direction:column;justify-content:center;height:auto;gap:22px;padding:16px 0 10px}
+.lg img{height:160px;width:auto}
+.nb ul{justify-content:center;flex-wrap:wrap;gap:9px}
+.nb ul a{color:rgba(255,255,255,.82);font-size:.9rem;padding:11px 20px}
+.nb ul a:hover{color:#fff}
+.nb a[aria-current=page]{color:#fff}
+/* hero: full-width board artwork, shaded toward the bottom, text centred over it */
+.hero.nv{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;
+width:100%;height:clamp(520px,42.8vw,840px);padding:0;
+background-color:#011623;background-image:linear-gradient(to top,rgba(1,22,35,.99) 0%,rgba(1,22,35,.96) 12%,rgba(1,22,35,.95) 20%,rgba(1,22,35,.92) 30%,rgba(1,22,35,.81) 40%,rgba(1,22,35,.71) 50%,rgba(1,22,35,.61) 60%,rgba(1,22,35,.51) 70%,rgba(1,22,35,.42) 75%,rgba(1,22,35,.28) 85%,rgba(1,22,35,.17) 94%,rgba(1,22,35,.12) 100%),var(--hero);
+background-repeat:no-repeat;background-size:cover;background-position:center}
+.hero.nv .w{padding-top:0;padding-bottom:0}
+.hc{max-width:900px;margin:0 auto;text-align:center}
+.hero.nv h1{font-size:clamp(1.9rem,3.2vw,3.3rem)}
+.hero.nv p{color:rgba(255,255,255,.9);max-width:38rem;margin:1rem auto 0;font-size:1.05rem}
+.hero.nv .bt{justify-content:center;margin-top:1.5rem}
+.hero.nv .btn{min-height:54px;padding:0 30px}
+/* video: edge to edge */
+.hero.nv+.sec.nv{background:#011623;padding:0}
+.hero.nv+.sec.nv .w{max-width:none;padding:0}
+.hero.nv+.sec.nv .vid{border-radius:0}
+@media(max-width:860px){
+.nb{flex-direction:row;justify-content:center;position:relative;padding:16px 0}
+.lg img{height:60px}
+#mb{position:absolute;right:28px;top:50%;transform:translateY(-50%);color:#fff;border-color:rgba(255,255,255,.35)}
+#mm{background:#011623;border-bottom:1px solid rgba(255,255,255,.15)}
+#mm a{color:#fff;border-bottom-color:rgba(255,255,255,.15)}
+#mm a[aria-current=page]{background:rgba(248,216,86,.25)}
+.hero.nv{height:auto;min-height:560px;padding:56px 0}.hero.nv .w{padding-bottom:0}}
+@media(max-width:560px){#mb{right:20px}}
+
+/* =====================================================================
+   ENHANCEMENTS: interaction, motion & accessibility layer
+   Idle appearance is unchanged; everything below affects only
+   transitions, hover/active/focus states, entrance animations and
+   reduced-motion handling. Uses existing palette variables only.
+   ===================================================================== */
+
+/* ---- 1. Buttons (.btn, .btn.g) ---- */
+.btn{transition:transform .2s ease-out,box-shadow .2s ease-out,filter .2s ease-out,background-color .2s ease-out,color .2s ease-out,border-color .2s ease-out}
+.btn.g:hover{border-color:var(--tx)}
+.nv .btn.g:hover{border-color:#fff}
+.cta .btn:hover{background:var(--navy);border-color:var(--navy)}
+.nv :focus-visible{outline-color:#fff}
+
+/* ---- 2. Navigation ---- */
+.nb ul a{transition:color .2s ease-out,box-shadow .25s ease-out,transform .15s ease-out}
+.nb ul a:hover:not([aria-current=page]){box-shadow:inset 0 -3px 0 rgba(248,216,86,.55)}
+.nb ul a:active{transform:translateY(1px)}
+.lg img{transition:filter .25s ease-out}
+.lg:hover img{filter:brightness(1.1)}
+#mb{transition:background-color .2s ease-out,border-color .2s ease-out}
+#mb:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6)}
+#mb:active{background:rgba(255,255,255,.18)}
+#mm a{transition:background-color .2s ease-out,padding-left .2s ease-out}
+#mm a:hover:not([aria-current=page]){background:rgba(248,216,86,.14)}
+#mm a:active{background:rgba(248,216,86,.3)}
+#mm.o{animation:drop .22s ease-out}
+
+/* ---- 3. Cards and panels (large info panels .pn.nv / .pn.st excluded) ---- */
+.g3>.pn,.stp>.pn,.e,.mc,.qr>div{transition:transform .25s ease-out,box-shadow .25s ease-out,border-color .25s ease-out}
+.stp>.pn:hover,.qr>div:hover{border-color:var(--y)}
+
+/* ---- 4. Images and components ---- */
+.e .im{overflow:hidden}
+.e .im img,.bd img,.gt img{transition:transform .4s ease-out}
+.gt img{will-change:auto}
+
+/* ---- 5. Rules tabs, FAQ / accordion ---- */
+.tabs button{transition:background-color .2s ease-out,border-color .2s ease-out,color .2s ease-out,transform .15s ease-out,filter .2s ease-out}
+.tabs button:hover:not([aria-selected=true]){color:var(--tx);border-color:var(--tx);background:rgba(248,216,86,.25)}
+.tabs button[aria-selected=true]:hover{filter:brightness(1.05)}
+.tabs button:active{transform:scale(.97)}
+.tp:not([hidden]){animation:in .3s ease-out}
+summary{transition:color .2s ease-out}
+summary:after{transition:transform .2s ease-out}
+summary:hover{color:var(--navy)}
+summary:hover:after{transform:scale(1.25)}
+summary:active:after{transform:scale(.9)}
+details[open] p{animation:fold .28s ease-out}
+.ex li{transition:color .2s ease-out,padding-left .2s ease-out}
+.ex li:hover{color:var(--tx)}
+.box li:last-child b{transition:color .2s ease-out}
+
+/* ---- 6. Footer links, video, lightbox ---- */
+.fg a{transition:transform .2s ease-out}
+.fg a:active{transform:translateX(1px)}
+.vs b{transition:transform .25s ease-out}
+.vid:hover .vs b{transform:scale(1.08)}
+dialog button{transition:transform .2s ease-out,filter .2s ease-out}
+dialog button:hover{transform:scale(1.08);filter:brightness(1.1)}
+dialog button:active{transform:scale(.95)}
+dialog button:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+dialog[open]{animation:in .22s ease-out}
+dialog[open] img{animation:zoomin .28s ease-out}
+
+/* ---- 7. Hover effects: pointer devices only, so taps never "stick" ---- */
+@media(hover:hover) and (pointer:fine){
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(23,33,26,.18)}
+.g3>.pn:hover,.stp>.pn:hover,.qr>div:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(12,34,64,.14)}
+.e:hover,.mc:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(12,34,64,.18)}
+.e:hover .im img{transform:scale(1.06)}
+.bd:hover img{transform:scale(1.03)}
+.gt:hover img{transform:scale(1.02)}
+.ex li:hover{padding-left:6px}
+.fg a:hover{transform:translateX(3px)}
+#mm a:hover:not([aria-current=page]){padding-left:6px}
+}
+/* Pressed states come after the hover block so they win while a pointer is down */
+.btn:active{transform:translateY(0) scale(.98);box-shadow:none;filter:brightness(.96);transition-duration:.08s}
+.g3>.pn:active,.stp>.pn:active,.e:active,.mc:active,.qr>div:active{transform:translateY(-1px)}
+
+/* ---- 8. Entrance animations (replay each time a page is shown).
+   fill-mode "backwards" so the end state is the normal state and hover transforms still work. ---- */
+.hc{animation:rise .6s ease-out backwards}
+.ec .e,.g5 .mc{animation:rise .5s ease-out backwards}
+.ec .e:nth-child(2),.g5 .mc:nth-child(2){animation-delay:.07s}
+.ec .e:nth-child(3),.g5 .mc:nth-child(3){animation-delay:.14s}
+.ec .e:nth-child(4),.g5 .mc:nth-child(4){animation-delay:.21s}
+.ec .e:nth-child(5),.g5 .mc:nth-child(5){animation-delay:.28s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+@keyframes drop{from{opacity:0;transform:translateY(-6px)}}
+@keyframes fold{from{opacity:0;transform:translateY(-4px)}}
+@keyframes zoomin{from{opacity:0;transform:scale(.97)}}
+
+/* ---- 9. Robustness: honour the [hidden] attribute on the Quick guide panel
+   (.qr sets display:grid, which otherwise overrides it) ---- */
+.qr[hidden]{display:none}
+
+/* ---- Overflow fix: the 3-up stat tiles on Game Components overflowed at <=560px
+   (an inline grid-template-columns beat the mobile rule). Same 3-up layout above 560px, stacked below. ---- */
+@media(min-width:561px){.two>.g3{grid-template-columns:repeat(3,1fr)}}
+
+/* ---- 10. Reduced motion: keep colour/shadow feedback, drop movement ---- */
+@media(prefers-reduced-motion:reduce){
+.hc,.ec .e,.g5 .mc,#mm.o,dialog[open],dialog[open] img,details[open] p,.tp:not([hidden]){animation:none}
+.btn:hover,.btn:active,.g3>.pn:hover,.stp>.pn:hover,.qr>div:hover,.e:hover,.mc:hover,.e:hover .im img,.bd:hover img,.gt:hover img,.fg a:hover,.nb ul a:active,.tabs button:active,.vid:hover .vs b,summary:hover:after,dialog button:hover,dialog button:active{transform:none}
+.ex li:hover,#mm a:hover:not([aria-current=page]){padding-left:0}
+}
+
+/* ---- Fix: "Why five emotions?" image sits fully inside its box, sized to the text beside it ---- */
+.gt.fit{height:auto;padding:24px}
+.gt.fit img{width:100%;max-width:420px;max-height:none;height:auto;margin:0 auto;border-radius:8px}
